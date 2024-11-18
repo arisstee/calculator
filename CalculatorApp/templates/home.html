@@ -1,0 +1,78 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+            integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+    </head>
+    <body>
+        <div class="container">
+            <div class="display-cover">
+                <div class="display"></div>
+            </div>
+            <div class="output"></div>
+            <div class="row">
+                <div class="dark-pink clear">AC</div>
+                <div class="dark-pink plus-minus">+/-</div>
+                <div class="dark-pink operators">÷</div>
+                <div class="pink backspace">
+                    <i class="fas fa-backspace"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="dark-pink numbers">7</div>
+                <div class="dark-pink numbers">8</div>
+                <div class="dark-pink numbers">9</div>
+                <div class="pink operators">×</div>
+            </div>
+            <div class="row">
+                <div class="dark-pink numbers">4</div>
+                <div class="dark-pink numbers">5</div>
+                <div class="dark-pink numbers">6</div>
+                <div class="pink operators">-</div>
+            </div>
+            <div class="row">
+                <div class="dark-pink numbers">1</div>
+                <div class="dark-pink numbers">2</div>
+                <div class="dark-pink numbers">3</div>
+                <div class="pink operators">+</div>
+            </div>
+            <div class="row">
+                <div class="dark-pink numbers" id="zero">0</div>
+                <div class="dark-pink dot">.</div>
+                <div class="pink equal">=</div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Tea's Calculator.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script src="{% static 'js/footer.js' %}"></script>
+        <script src="{% static 'js/index.js' %}"></script>
+    </body>
+</html>
